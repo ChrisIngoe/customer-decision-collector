@@ -3,19 +3,19 @@
   <head>
     <%- include('partials/head') %>
   </head>
-  <body>
-    <H1>Passwordless - Example: Simple-Mail</H1>
+  <body class="hero-image">
+    <h1>Customer Decision Collector</h1>
+    <br />
     <p>
       User: <% if(user) { %> <%= user %> (<a href="/logout">logout</a>) <% }
       else { %> Not logged in <% } %>
     </p>
-    <ul>
-      <li>
-        <a href="/login">Login / Register</a>
-      </li>
-      <li>
-        <a href="/restricted">Restricted page</a>
-      </li>
-    </ul>
+    <br />
+    <p>
+      <a href="/login">Login / Register</a>
+    </p>
+    <p>
+      <a href="/restricted">Restricted page</a>
+    </p>
   </body>
 </html>
