@@ -9,13 +9,11 @@ a {
 }
 
 .hero-image {
-  background-image: url('../images/background.jpg');
-  background-color: #2b7392;
-  height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 20%;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 
 .form-signin-body {
