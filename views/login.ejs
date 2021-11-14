@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' href='/stylesheets/style.css' type='text/css'>
+    <%- include('partials/head') %>
   </head>
-  <body>
-    <h1>Passwordless - Login</h1>
-    <p>
-    User: 
-    <% if(user) { %>
-    	<%= user %> (<a href='/logout'>logout</a>)
-    <% } else { %>
-    	Not logged in
-    <% } %>
-    </p>
-    <p>
-    <form action="/sendtoken" method="POST">
-      Email:
-      <br><input name="user" type="text">
-      <br><input type="submit" value="Login / Register">
+  <body class="text-center form-signin-body">
+    <form class="form-signin" action="/sendtoken" method="POST">
+      <img
+        class="mb-4"
+        src="./images/sign-in.png"
+        alt=""
+        width="72"
+        height="72"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input
+        name="user"
+        type="email"
+        id="inputEmail"
+        class="form-control"
+        placeholder="Email address"
+        required
+        autofocus
+      />
+      <br />
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        Sign in
+      </button>
+      <br />
+      <br />
+      <row>
+        <a href="/">Back to homepage</a>
+      </row>
     </form>
-    </p>
-    <ul>
-      <li>
-        <a href='/'>Back to homepage</a>
-      </li>
-      <li>
-        <a href='/restricted'>Restricted page</a>
-      </li>
-    </ul>
   </body>
 </html>

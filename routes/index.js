@@ -10,17 +10,17 @@ const users = [{ id: 10002345, email: testEmailAddress }];
 
 /* GET home page. */
 router.get('/', function (req, res) {
-  res.render('index', { user: req.user });
+  res.render('index', { page: 'Home', user: req.user });
 });
 
 /* GET restricted site. */
 router.get('/restricted', passwordless.restricted(), function (req, res) {
-  res.render('restricted', { user: req.user });
+  res.render('restricted', { page: 'Restricted', user: req.user });
 });
 
 /* GET login screen. */
 router.get('/login', function (req, res) {
-  res.render('login', { user: req.user });
+  res.render('login', { page: 'Login', user: req.user });
 });
 
 /* GET logout. */
@@ -41,7 +41,7 @@ router.post(
     callback(null, null);
   }),
   function (req, res) {
-    res.render('sent');
+    res.render('sent', { page: 'Sent' });
   },
 );
 

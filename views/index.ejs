@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+    <%- include('partials/head') %>
   </head>
   <body>
-    <h1>Passwordless - Example: Simple-Mail</h1>
-    <p>User: <% if(user) { %> <%= user %> (<a href="/logout">logout</a>) <% } else { %> Not logged in <% } %></p>
+    <H1>Passwordless - Example: Simple-Mail</H1>
+    <p>
+      User: <% if(user) { %> <%= user %> (<a href="/logout">logout</a>) <% }
+      else { %> Not logged in <% } %>
+    </p>
     <ul>
       <li>
         <a href="/login">Login / Register</a>
