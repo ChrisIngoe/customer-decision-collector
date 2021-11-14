@@ -1,3 +1,17 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body class="hero-image">
+    <h1><%= message %></h1>
+    <br />
+    <h2><%= error.status %></h2>
+    <br />
+    <pre><%= error.stack %></pre>
+    <br />
+    <h4>
+      <a href="/">Back to homepage</a>
+    </h4>
+  </body>
+</html>

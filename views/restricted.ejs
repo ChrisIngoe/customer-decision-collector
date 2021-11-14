@@ -3,17 +3,17 @@
   <head>
     <%- include('partials/head') %>
   </head>
-  <body>
+  <body class="hero-image">
     <h1>Restricted page!</h1>
-    <p>User: <% if(user) { %> <%= user %> (<a href="/logout">logout</a>) <% } else { %> Not logged in <% } %></p>
-    <p>This page is only accessible for authenticated users! Psssss... This is a secret!</p>
-    <ul>
-      <li>
-        <a href="/">Back to homepage</a>
-      </li>
-      <li>
-        <a href="/login">Login / Register</a>
-      </li>
-    </ul>
+    <br />
+    <h3>
+      User: <% if(user) { %> <%= user %> (<a href="/logout">logout</a>) <% }
+      else { %> Not logged in <% } %>
+    </h3>
+    <h3>This page is only accessible for authenticated users!</h3>
+    <br />
+    <h4>
+      <a href="/">Back to homepage</a>
+    </h4>
   </body>
 </html>

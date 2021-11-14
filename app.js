@@ -87,6 +87,7 @@ app.use(function (err, req, res) {
   res.render('error', {
     message: err.message,
     error: err,
+    page: 'Error',
   });
 });
 
