@@ -1,0 +1,16 @@
+{
+  "email": {
+    "from": "[FROM EMAIL ADDRESS]",
+    "apiKey": "[MAILER API KEY]",
+    "subject": "[EMAIL SUBJECT]",
+    "domain": "[EMAIL DOMAIN]",
+    "testEmailAddress": "[TEST EMAIL ADDRESS]"
+  },
+  "website": {
+    "host": "[WEBSITE HOST]"
+  },
+  "cookie": {
+    "secret": "[COOKIE SECRET]",
+    "secure": true
+  }
+}
