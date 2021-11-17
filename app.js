@@ -34,7 +34,7 @@ passwordless.addDelivery(function (
     to: recipient,
     subject: emailSubject,
     html:
-      'Hello!\nWe need your help. Please login and tell us what you want: ' +
+      'Great! Almost there, just click this link then answer the question: ' +
       host +
       '?token=' +
       tokenToSend +

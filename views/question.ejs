@@ -4,13 +4,13 @@
     <%- include('partials/head') %>
   </head>
   <body class="hero-image">
-    <h1>Restricted page!</h1>
+    <h1>Customer Question</h1>
     <br />
     <h3>
       User: <% if(user) { %> <%= user %> (<a href="/logout">logout</a>) <% }
       else { %> Not logged in <% } %>
     </h3>
-    <h3>This page is only accessible for authenticated users!</h3>
+    <h3>This page is only accessible for authenticated customers!</h3>
     <br />
     <h4>
       <a href="/">Back to homepage</a>

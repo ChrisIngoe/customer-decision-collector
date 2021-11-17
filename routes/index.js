@@ -13,9 +13,9 @@ router.get('/', function (req, res) {
   res.render('index', { page: 'Home', user: req.user });
 });
 
-/* GET restricted site. */
-router.get('/restricted', passwordless.restricted(), function (req, res) {
-  res.render('restricted', { page: 'Restricted', user: req.user });
+/* GET question site. */
+router.get('/question', passwordless.restricted(), function (req, res) {
+  res.render('question', { page: 'Question', user: req.user });
 });
 
 /* GET login screen. */

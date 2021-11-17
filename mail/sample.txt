@@ -1,0 +1,17 @@
+Hi
+
+I hope you’re having a wonderful day!
+
+I am emailing you today to let you know we have received your application for a new product.
+
+We're really looking forward to completing this application and getting you all setup.
+
+Before we do, we need some information from you as the application is stuck.
+
+Please can you follow the link below, enter your email address and confirm the authentication. We'll then ask you the question and we're done.
+
+http://localhost:3000/login
+
+Any problems, please feel free to call 0700 000 000.
+
+Thank you
