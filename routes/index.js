@@ -6,7 +6,13 @@ const testEmailAddress = config.get('email.testEmailAddress');
 
 const router = express.Router();
 
-const users = [{ id: 10002345, email: testEmailAddress }];
+const users = [
+  {
+    id: 10002345,
+    email: testEmailAddress,
+    question: 'Do you still want the product? Yes/No',
+  },
+];
 
 /* GET home page. */
 router.get('/', function (req, res) {
@@ -15,7 +21,8 @@ router.get('/', function (req, res) {
 
 /* GET question site. */
 router.get('/question', passwordless.restricted(), function (req, res) {
-  res.render('question', { page: 'Question', user: req.user });
+  const user = users.find((user) => user.id == req.user);
+  res.render('question', { page: 'Question', user: user });
 });
 
 /* GET login screen. */

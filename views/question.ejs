@@ -7,10 +7,12 @@
     <h1>Customer Question</h1>
     <br />
     <h3>
-      User: <% if(user) { %> <%= user %> (<a href="/logout">logout</a>) <% }
+      User: <% if(user) { %> <%= user.id %> (<a href="/logout">logout</a>) <% }
       else { %> Not logged in <% } %>
     </h3>
     <h3>This page is only accessible for authenticated customers!</h3>
+    <br />
+    <h3><%= user.question %></h3>
     <br />
     <h4>
       <a href="/">Back to homepage</a>
